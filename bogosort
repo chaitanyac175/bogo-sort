@@ -1,0 +1,14 @@
+The time complexity analysis of bogosort is interesting due to its highly inefficient nature. Let's break down the time complexity of bogosort:
+
+Average Case:
+Bogosort works by randomly shuffling the elements of the input array and checking if the resulting permutation is sorted. Since there are n! possible permutations of n elements, the probability of randomly selecting a sorted permutation is 1/n!.
+Therefore, on average, bogosort will need to perform O(n! * n) random shuffles to find a sorted permutation.
+The time complexity of each shuffle operation is O(n), where n is the number of elements in the array.
+Combining these factors, the average time complexity of bogosort is approximately O(n! * n^2).
+Worst Case:
+The worst-case scenario for bogosort occurs when it takes an indefinite amount of time to randomly generate a sorted permutation of the array.
+Since there is no upper bound on the number of shuffles required to find a sorted permutation, the worst-case time complexity of bogosort is technically unbounded.
+However, in practical terms, the worst-case time complexity of bogosort is often considered to be O(∞) or undefined, as there is no guarantee of termination within any finite time frame.
+Best Case:
+The best-case scenario for bogosort occurs when the input array is already sorted. In this case, bogosort will require no shuffling and will terminate immediately after the initial check for sortedness.
+Therefore, the best-case time complexity of bogosort is O(n), where n is the number of elements in the array.
